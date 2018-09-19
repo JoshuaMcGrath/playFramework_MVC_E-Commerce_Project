@@ -1,0 +1,37 @@
+@(userForm : Form[models.users.User],user : models.users.User, filter: String)
+@import helper._
+
+
+
+
+@main("Register",user, filter){
+    <div class="container">
+    <div class="row"></div>
+<div class="col-sm-6"></div>
+<h1>Fill out current form to register.</h1>
+
+@form(routes.HomeController.addUserSubmit(), 'class -> "form-horizontal", 'role -> "form"){
+    @CSRF.formField
+
+    @inputText(userForm("email"), '_label -> "email", 'class -> "form-control")
+    @inputText(userForm("name"), '_label -> "name", 'class -> "form-control")
+    @inputText(userForm("password"), '_label -> "password", 'class -> "form-control")                 
+   
+    
+    
+  
+    
+    
+    <div class="actions">
+    <input type="submit" value = "Register" class="btn btn-primary">
+    <a href ="@routes.HomeController.Home()">
+        <button type="button" class="btn btn-warning">Cancel</button>
+    </a>
+    
+    
+}
+    
+    </div>
+</div>
+
+    }

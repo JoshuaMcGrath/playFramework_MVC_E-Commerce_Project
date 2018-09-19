@@ -1,0 +1,9 @@
+[0m[[0m[0mdebug[0m] [0m[0mCopy resource mappings: [0m
+[0m[[0m[0mdebug[0m] [0m[0m	(/media/sf_student/Finished/Finished Document/Furniture&Co/conf/application.conf,/media/sf_student/Finished/Finished Document/Furniture&Co/target/scala-2.12/classes/application.conf)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	(/media/sf_student/Finished/Finished Document/Furniture&Co/conf/evolutions,/media/sf_student/Finished/Finished Document/Furniture&Co/target/scala-2.12/classes/evolutions)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	(/media/sf_student/Finished/Finished Document/Furniture&Co/conf/logback.xml,/media/sf_student/Finished/Finished Document/Furniture&Co/target/scala-2.12/classes/logback.xml)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	(/media/sf_student/Finished/Finished Document/Furniture&Co/conf/routes,/media/sf_student/Finished/Finished Document/Furniture&Co/target/scala-2.12/classes/routes)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	(/media/sf_student/Finished/Finished Document/Furniture&Co/conf/evolutions/default,/media/sf_student/Finished/Finished Document/Furniture&Co/target/scala-2.12/classes/evolutions/default)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	(/media/sf_student/Finished/Finished Document/Furniture&Co/conf/evolutions/default/1.sql,/media/sf_student/Finished/Finished Document/Furniture&Co/target/scala-2.12/classes/evolutions/default/1.sql)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	(/media/sf_student/Finished/Finished Document/Furniture&Co/conf/evolutions/default/2.sql,/media/sf_student/Finished/Finished Document/Furniture&Co/target/scala-2.12/classes/evolutions/default/2.sql)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	(/media/sf_student/Finished/Finished Document/Furniture&Co/conf/evolutions/default/3.sql,/media/sf_student/Finished/Finished Document/Furniture&Co/target/scala-2.12/classes/evolutions/default/3.sql)[0m

@@ -1,0 +1,78 @@
+@(productForm : Form[models.Product],user : models.users.User, filter: String)
+@import helper._
+
+
+
+
+@main("Adding new Product",user, filter){
+<div class="col-sm-6"></div>
+<h1>Fill out current form to add Product.</h1>
+
+@form(routes.HomeController.addProductSubmit(),     'class -> "form-horizontal", 
+'role -> "form",
+'enctype -> "multipart/form-data") {
+    @CSRF.formField
+    @inputText(productForm ("name"), '_label -> "Name", 'class -> "form-control")
+    @inputText(productForm ("price"), '_label -> "Price", 'class -> "form-control")
+    @inputText(productForm ("description"), '_label -> "Description", 'class -> "form-control")
+    @inputText(productForm ("stock"), '_label -> "Stock", 'class -> "form-control")
+    
+    @select(
+    
+        productForm ("category.id"),options(Category.options),'_label ->"Category",'_default -> "Choose Room",
+    '_showConstraints -> false, 'class-> "form-control"
+    
+    
+    )
+    
+    
+    @inputText(productForm ("id"), '_label -> "", 'hidden -> "hidden")
+
+    <label>Image Upload</label>
+    <input class="btn-sm btn-default" type="file" name="upload">
+    <br><br>
+
+    <div class="actions">
+    <input type="submit" value = "-ADD PRODUCT-" class="btn btn-primary">
+    <a href ="@routes.HomeController.Home()">
+        <button type="button" class="btn btn-warning">Cancel</button>
+    </a>
+    
+    
+    
+    
+    </div>
+    
+    }
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}

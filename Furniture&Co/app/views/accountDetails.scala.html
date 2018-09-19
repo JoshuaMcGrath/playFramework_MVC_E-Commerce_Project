@@ -1,0 +1,54 @@
+@(customer: models.users.Customer,loginForm: Form[models.users.Login],user : models.users.User, filter: String)
+@import helper._
+
+@main("Account information",user, filter) {
+  
+    <div class="container">
+            <div class="panel-body">
+                    <table class="table table-striped table-bordered table-list">
+                      <thead>
+
+            <tr>
+                    <th>Password</th>           
+                    <th>View Orders</th>         
+                    <th>Name</th>
+                    <th>Email</th>
+                    
+                </tr>
+                
+              </thead>
+              <tbody>
+                   
+                      <tr>
+                        <td align="center">
+                                              <a href="@routes.HomeController.updateCustomer(user.getEmail)">Change Password</a>
+                                              
+
+                        </td>
+                        <td>        <a href="@routes.ShoppingCtrl.viewOrder(user.getEmail)">Click here to view or cancel current orders</a>
+                        </td>
+                        <td>@customer.getFirstName</td>            
+                        <td>@customer.getEmail</td>
+                      </tr>        
+
+                      <P>
+                          Welcome!
+                          @customer.getFirstName
+                          @customer.getLastName
+                      </P>
+             
+        
+       
+        
+            </div>
+            
+        
+        </div>
+    </div>
+</div>
+</div>
+
+        
+      
+        
+    }

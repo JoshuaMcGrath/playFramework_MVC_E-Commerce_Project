@@ -1,0 +1,306 @@
+[0m[[0m[31merror[0m] [0m[0m/media/sf_student/Test/app/controllers/AdminController.java:3:1: package play.mvc does not exist[0m
+[0m[[0m[31merror[0m] [0m[0mimport play.mvc.*;[0m
+[0m[[0m[31merror[0m] [0m[0m/media/sf_student/Test/app/controllers/AdminController.java:5:1: package play.api does not exist[0m
+[0m[[0m[31merror[0m] [0m[0mimport play.api.Environment;[0m
+[0m[[0m[31merror[0m] [0m[0m/media/sf_student/Test/app/controllers/AdminController.java:6:1: package play.data does not exist[0m
+[0m[[0m[31merror[0m] [0m[0mimport play.data.*;[0m
+[0m[[0m[31merror[0m] [0m[0m/media/sf_student/Test/app/controllers/AdminController.java:7:1: package play.db.ebean does not exist[0m
+[0m[[0m[31merror[0m] [0m[0mimport play.db.ebean.Transactional;[0m
+[0m[[0m[31merror[0m] [0m[0m/media/sf_student/Test/app/controllers/AdminController.java:11:1: package javax.inject does not exist[0m
+[0m[[0m[31merror[0m] [0m[0mimport javax.inject.Inject;[0m
+[0m[[0m[31merror[0m] [0m[0m/media/sf_student/Test/app/controllers/AdminController.java:13:1: package controllers.security does not exist[0m
+[0m[[0m[31merror[0m] [0m[0mimport controllers.security.*;[0m
+[0m[[0m[31merror[0m] [0m[0m/media/sf_student/Test/app/controllers/AdminController.java:14:1: package models does not exist[0m
+[0m[[0m[31merror[0m] [0m[0mimport models.*;[0m
+[0m[[0m[31merror[0m] [0m[0m/media/sf_student/Test/app/controllers/AdminController.java:15:1: package views.html does not exist[0m
+[0m[[0m[31merror[0m] [0m[0mimport views.html.*;[0m
+[0m[[0m[31merror[0m] [0m[0m/media/sf_student/Test/app/controllers/AdminController.java:16:1: package models.users does not exist[0m
+[0m[[0m[31merror[0m] [0m[0mimport models.users.*;[0m
+[0m[[0m[31merror[0m] [0m[0m/media/sf_student/Test/app/controllers/AdminController.java:21:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol: class Controller[0m
+[0m[[0m[31merror[0m] [0m[0mpublic class AdminController extends Controller {[0m
+[0m[[0m[31merror[0m] [0m[0m/media/sf_student/Test/app/controllers/AdminController.java:18:1: package Security does not exist[0m
+[0m[[0m[31merror[0m] [0m[0m@Security.Authenticated(Secured.class)[0m
+[0m[[0m[31merror[0m] [0m[0m/media/sf_student/Test/app/controllers/AdminController.java:20:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol: class With[0m
+[0m[[0m[31merror[0m] [0m[0m@With(AuthAdmin.class)[0m
+[0m[[0m[31merror[0m] [0m[0m/media/sf_student/Test/app/controllers/AdminController.java:25:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   class FormFactory[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class controllers.AdminController[0m
+[0m[[0m[31merror[0m] [0m[0m    private FormFactory formFactory;[0m
+[0m[[0m[31merror[0m] [0m[0m/media/sf_student/Test/app/controllers/AdminController.java:26:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   class Environment[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class controllers.AdminController[0m
+[0m[[0m[31merror[0m] [0m[0m    private Environment e;[0m
+[0m[[0m[31merror[0m] [0m[0m/media/sf_student/Test/app/controllers/AdminController.java:30:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   class FormFactory[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class controllers.AdminController[0m
+[0m[[0m[31merror[0m] [0m[0m    public AdminController(FormFactory f, Environment env){[0m
+[0m[[0m[31merror[0m] [0m[0m/media/sf_student/Test/app/controllers/AdminController.java:30:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   class Environment[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class controllers.AdminController[0m
+[0m[[0m[31merror[0m] [0m[0m    public AdminController(FormFactory f, Environment env){[0m
+[0m[[0m[31merror[0m] [0m[0m/media/sf_student/Test/app/controllers/AdminController.java:36:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   class Result[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class controllers.AdminController[0m
+[0m[[0m[31merror[0m] [0m[0mpublic Result adminControl(String filter){[0m
+[0m[[0m[31merror[0m] [0m[0m/media/sf_student/Test/app/controllers/AdminController.java:42:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   class Result[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class controllers.AdminController[0m
+[0m[[0m[31merror[0m] [0m[0mpublic Result deleteProduct(Long id, String filter){[0m
+[0m[[0m[31merror[0m] [0m[0m/media/sf_student/Test/app/controllers/AdminController.java:51:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   class Result[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class controllers.AdminController[0m
+[0m[[0m[31merror[0m] [0m[0mpublic Result deleteCustomer(String email, String filter){[0m
+[0m[[0m[31merror[0m] [0m[0m/media/sf_student/Test/app/controllers/HomeController.java:3:1: package play.mvc does not exist[0m
+[0m[[0m[31merror[0m] [0m[0mimport play.mvc.*;[0m
+[0m[[0m[31merror[0m] [0m[0m/media/sf_student/Test/app/controllers/HomeController.java:5:1: package play.api does not exist[0m
+[0m[[0m[31merror[0m] [0m[0mimport play.api.Environment;[0m
+[0m[[0m[31merror[0m] [0m[0m/media/sf_student/Test/app/controllers/HomeController.java:6:1: package play.data does not exist[0m
+[0m[[0m[31merror[0m] [0m[0mimport play.data.*;[0m
+[0m[[0m[31merror[0m] [0m[0m/media/sf_student/Test/app/controllers/HomeController.java:7:1: package play.db.ebean does not exist[0m
+[0m[[0m[31merror[0m] [0m[0mimport play.db.ebean.Transactional;[0m
+[0m[[0m[31merror[0m] [0m[0m/media/sf_student/Test/app/controllers/HomeController.java:11:1: package javax.inject does not exist[0m
+[0m[[0m[31merror[0m] [0m[0mimport javax.inject.Inject;[0m
+[0m[[0m[31merror[0m] [0m[0m/media/sf_student/Test/app/controllers/HomeController.java:13:1: package play.mvc.Http does not exist[0m
+[0m[[0m[31merror[0m] [0m[0mimport play.mvc.Http.*;[0m
+[0m[[0m[31merror[0m] [0m[0m/media/sf_student/Test/app/controllers/HomeController.java:14:1: package play.mvc.Http.MultipartFormData does not exist[0m
+[0m[[0m[31merror[0m] [0m[0mimport play.mvc.Http.MultipartFormData.FilePart;[0m
+[0m[[0m[31merror[0m] [0m[0m/media/sf_student/Test/app/controllers/HomeController.java:18:1: package org.im4java.core does not exist[0m
+[0m[[0m[31merror[0m] [0m[0mimport org.im4java.core.ConvertCmd;[0m
+[0m[[0m[31merror[0m] [0m[0m/media/sf_student/Test/app/controllers/HomeController.java:19:1: package org.im4java.core does not exist[0m
+[0m[[0m[31merror[0m] [0m[0mimport org.im4java.core.IMOperation;[0m
+[0m[[0m[31merror[0m] [0m[0m/media/sf_student/Test/app/controllers/HomeController.java:22:1: package models does not exist[0m
+[0m[[0m[31merror[0m] [0m[0mimport models.*;[0m
+[0m[[0m[31merror[0m] [0m[0m/media/sf_student/Test/app/controllers/HomeController.java:23:1: package views.html does not exist[0m
+[0m[[0m[31merror[0m] [0m[0mimport views.html.*;[0m
+[0m[[0m[31merror[0m] [0m[0m/media/sf_student/Test/app/controllers/HomeController.java:24:1: package models.users does not exist[0m
+[0m[[0m[31merror[0m] [0m[0mimport models.users.*;[0m
+[0m[[0m[31merror[0m] [0m[0m/media/sf_student/Test/app/controllers/HomeController.java:25:1: package controllers.security does not exist[0m
+[0m[[0m[31merror[0m] [0m[0mimport controllers.security.*;[0m
+[0m[[0m[31merror[0m] [0m[0m/media/sf_student/Test/app/controllers/HomeController.java:31:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol: class Controller[0m
+[0m[[0m[31merror[0m] [0m[0mpublic class HomeController extends Controller {[0m
+[0m[[0m[31merror[0m] [0m[0m/media/sf_student/Test/app/controllers/HomeController.java:34:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   class FormFactory[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class controllers.HomeController[0m
+[0m[[0m[31merror[0m] [0m[0m    private FormFactory formFactory;[0m
+[0m[[0m[31merror[0m] [0m[0m/media/sf_student/Test/app/controllers/HomeController.java:35:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   class Environment[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class controllers.HomeController[0m
+[0m[[0m[31merror[0m] [0m[0m    private Environment e;[0m
+[0m[[0m[31merror[0m] [0m[0m/media/sf_student/Test/app/controllers/HomeController.java:39:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   class FormFactory[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class controllers.HomeController[0m
+[0m[[0m[31merror[0m] [0m[0m    public HomeController(FormFactory f, Environment env){[0m
+[0m[[0m[31merror[0m] [0m[0m/media/sf_student/Test/app/controllers/HomeController.java:39:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   class Environment[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class controllers.HomeController[0m
+[0m[[0m[31merror[0m] [0m[0m    public HomeController(FormFactory f, Environment env){[0m
+[0m[[0m[31merror[0m] [0m[0m/media/sf_student/Test/app/controllers/HomeController.java:45:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   class Result[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class controllers.HomeController[0m
+[0m[[0m[31merror[0m] [0m[0m    public Result Home(String filter) {[0m
+[0m[[0m[31merror[0m] [0m[0m/media/sf_student/Test/app/controllers/HomeController.java:54:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   class Result[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class controllers.HomeController[0m
+[0m[[0m[31merror[0m] [0m[0m    public Result AboutUs() {[0m
+[0m[[0m[31merror[0m] [0m[0m/media/sf_student/Test/app/controllers/HomeController.java:61:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   class Result[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class controllers.HomeController[0m
+[0m[[0m[31merror[0m] [0m[0m    public Result Bathroom(Long cat, String filter){[0m
+[0m[[0m[31merror[0m] [0m[0m/media/sf_student/Test/app/controllers/HomeController.java:76:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   class Result[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class controllers.HomeController[0m
+[0m[[0m[31merror[0m] [0m[0m    public Result Kitchen(Long cat, String filter){[0m
+[0m[[0m[31merror[0m] [0m[0m/media/sf_student/Test/app/controllers/HomeController.java:99:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   class Result[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class controllers.HomeController[0m
+[0m[[0m[31merror[0m] [0m[0m    public Result Bedroom(Long cat, String filter){[0m
+[0m[[0m[31merror[0m] [0m[0m/media/sf_student/Test/app/controllers/HomeController.java:114:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   class Result[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class controllers.HomeController[0m
+[0m[[0m[31merror[0m] [0m[0m    public Result LivingRoom(Long cat, String filter){[0m
+[0m[[0m[31merror[0m] [0m[0m/media/sf_student/Test/app/controllers/HomeController.java:132:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   class Result[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class controllers.HomeController[0m
+[0m[[0m[31merror[0m] [0m[0m    public Result addProduct(){[0m
+[0m[[0m[31merror[0m] [0m[0m/media/sf_student/Test/app/controllers/HomeController.java:137:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   class Result[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class controllers.HomeController[0m
+[0m[[0m[31merror[0m] [0m[0m    public Result addProductSubmit(){[0m
+[0m[[0m[31merror[0m] [0m[0m/media/sf_student/Test/app/controllers/HomeController.java:151:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   class Result[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class controllers.HomeController[0m
+[0m[[0m[31merror[0m] [0m[0m    public Result addUser(){[0m
+[0m[[0m[31merror[0m] [0m[0m/media/sf_student/Test/app/controllers/HomeController.java:156:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   class Result[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class controllers.HomeController[0m
+[0m[[0m[31merror[0m] [0m[0m    public Result addUserSubmit(){[0m
+[0m[[0m[31merror[0m] [0m[0m/media/sf_student/Test/app/controllers/HomeController.java:171:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   class Result[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class controllers.HomeController[0m
+[0m[[0m[31merror[0m] [0m[0m    public Result addCustomer(){[0m
+[0m[[0m[31merror[0m] [0m[0m/media/sf_student/Test/app/controllers/HomeController.java:177:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   class Result[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class controllers.HomeController[0m
+[0m[[0m[31merror[0m] [0m[0m    public Result updateProduct(Long id){[0m
+[0m[[0m[31merror[0m] [0m[0m/media/sf_student/Test/app/controllers/HomeController.java:193:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   class Result[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class controllers.HomeController[0m
+[0m[[0m[31merror[0m] [0m[0m        public Result updateProductSubmit(Long id) {[0m
+[0m[[0m[31merror[0m] [0m[0m/media/sf_student/Test/app/controllers/HomeController.java:238:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   class Result[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class controllers.HomeController[0m
+[0m[[0m[31merror[0m] [0m[0m    public Result addCustomerSubmit(){[0m
+[0m[[0m[31merror[0m] [0m[0m/media/sf_student/Test/app/controllers/HomeController.java:261:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   class FilePart[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class controllers.HomeController[0m
+[0m[[0m[31merror[0m] [0m[0m    public String saveFile(Long id, FilePart<File> uploaded) {[0m
+[0m[[0m[31merror[0m] [0m[0m/media/sf_student/Test/app/controllers/HomeController.java:308:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   class Result[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class controllers.HomeController[0m
+[0m[[0m[31merror[0m] [0m[0m    public Result productListing(Long id, String filter) {[0m
+[0m[[0m[31merror[0m] [0m[0m/media/sf_student/Test/app/controllers/HomeController.java:319:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   class Result[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class controllers.HomeController[0m
+[0m[[0m[31merror[0m] [0m[0m    public Result search(long cat,String filter){[0m
+[0m[[0m[31merror[0m] [0m[0m/media/sf_student/Test/app/controllers/LoginController.java:3:1: package play.api does not exist[0m
+[0m[[0m[31merror[0m] [0m[0mimport play.api.Environment;[0m
+[0m[[0m[31merror[0m] [0m[0m/media/sf_student/Test/app/controllers/LoginController.java:5:1: package javax.persistence does not exist[0m
+[0m[[0m[31merror[0m] [0m[0mimport javax.persistence.*;[0m
+[0m[[0m[31merror[0m] [0m[0m/media/sf_student/Test/app/controllers/LoginController.java:6:1: package play.mvc does not exist[0m
+[0m[[0m[31merror[0m] [0m[0mimport play.mvc.*;[0m
+[0m[[0m[31merror[0m] [0m[0m/media/sf_student/Test/app/controllers/LoginController.java:7:1: package play.data does not exist[0m
+[0m[[0m[31merror[0m] [0m[0mimport play.data.*;[0m
+[0m[[0m[31merror[0m] [0m[0m/media/sf_student/Test/app/controllers/LoginController.java:8:1: package play.db.ebean does not exist[0m
+[0m[[0m[31merror[0m] [0m[0mimport play.db.ebean.Transactional;[0m
+[0m[[0m[31merror[0m] [0m[0m/media/sf_student/Test/app/controllers/LoginController.java:12:1: package io.ebean does not exist[0m
+[0m[[0m[31merror[0m] [0m[0mimport io.ebean.*;[0m
+[0m[[0m[31merror[0m] [0m[0m/media/sf_student/Test/app/controllers/LoginController.java:13:1: package play.data.format does not exist[0m
+[0m[[0m[31merror[0m] [0m[0mimport play.data.format.*;[0m
+[0m[[0m[31merror[0m] [0m[0m/media/sf_student/Test/app/controllers/LoginController.java:14:1: package play.data.validation does not exist[0m
+[0m[[0m[31merror[0m] [0m[0mimport play.data.validation.*;[0m
+[0m[[0m[31merror[0m] [0m[0m/media/sf_student/Test/app/controllers/LoginController.java:16:1: package javax.inject does not exist[0m
+[0m[[0m[31merror[0m] [0m[0mimport javax.inject.Inject;[0m
+[0m[[0m[31merror[0m] [0m[0m/media/sf_student/Test/app/controllers/LoginController.java:18:1: package views.html does not exist[0m
+[0m[[0m[31merror[0m] [0m[0mimport views.html.*;[0m
+[0m[[0m[31merror[0m] [0m[0m/media/sf_student/Test/app/controllers/LoginController.java:20:1: package models.users does not exist[0m
+[0m[[0m[31merror[0m] [0m[0mimport models.users.*;[0m
+[0m[[0m[31merror[0m] [0m[0m/media/sf_student/Test/app/controllers/LoginController.java:22:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol: class Controller[0m
+[0m[[0m[31merror[0m] [0m[0mpublic class LoginController extends Controller{[0m
+[0m[[0m[31merror[0m] [0m[0m/media/sf_student/Test/app/controllers/LoginController.java:24:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   class FormFactory[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class controllers.LoginController[0m
+[0m[[0m[31merror[0m] [0m[0mprivate FormFactory formFactory;[0m
+[0m[[0m[31merror[0m] [0m[0m/media/sf_student/Test/app/controllers/LoginController.java:26:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   class Environment[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class controllers.LoginController[0m
+[0m[[0m[31merror[0m] [0m[0mprivate Environment env;[0m
+[0m[[0m[31merror[0m] [0m[0m/media/sf_student/Test/app/controllers/LoginController.java:31:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   class Environment[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class controllers.LoginController[0m
+[0m[[0m[31merror[0m] [0m[0mpublic LoginController(Environment e, FormFactory f){[0m
+[0m[[0m[31merror[0m] [0m[0m/media/sf_student/Test/app/controllers/LoginController.java:31:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   class FormFactory[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class controllers.LoginController[0m
+[0m[[0m[31merror[0m] [0m[0mpublic LoginController(Environment e, FormFactory f){[0m
+[0m[[0m[31merror[0m] [0m[0m/media/sf_student/Test/app/controllers/LoginController.java:37:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   class Result[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class controllers.LoginController[0m
+[0m[[0m[31merror[0m] [0m[0mpublic Result login(String filter){[0m
+[0m[[0m[31merror[0m] [0m[0m/media/sf_student/Test/app/controllers/LoginController.java:42:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   class Result[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class controllers.LoginController[0m
+[0m[[0m[31merror[0m] [0m[0mpublic Result loginSubmit(){[0m
+[0m[[0m[31merror[0m] [0m[0m/media/sf_student/Test/app/controllers/LoginController.java:57:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   class Result[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class controllers.LoginController[0m
+[0m[[0m[31merror[0m] [0m[0mpublic Result logout(){[0m
+[0m[[0m[31merror[0m] [0m[0m/media/sf_student/Test/app/controllers/ShoppingCtrl.java:3:1: package play.mvc does not exist[0m
+[0m[[0m[31merror[0m] [0m[0mimport play.mvc.*;[0m
+[0m[[0m[31merror[0m] [0m[0m/media/sf_student/Test/app/controllers/ShoppingCtrl.java:4:1: package play.data does not exist[0m
+[0m[[0m[31merror[0m] [0m[0mimport play.data.*;[0m
+[0m[[0m[31merror[0m] [0m[0m/media/sf_student/Test/app/controllers/ShoppingCtrl.java:5:1: package javax.inject does not exist[0m
+[0m[[0m[31merror[0m] [0m[0mimport javax.inject.Inject;[0m
+[0m[[0m[31merror[0m] [0m[0m/media/sf_student/Test/app/controllers/ShoppingCtrl.java:7:1: package views.html does not exist[0m
+[0m[[0m[31merror[0m] [0m[0mimport views.html.*;[0m
+[0m[[0m[31merror[0m] [0m[0m/media/sf_student/Test/app/controllers/ShoppingCtrl.java:8:1: package play.db.ebean does not exist[0m
+[0m[[0m[31merror[0m] [0m[0mimport play.db.ebean.Transactional;[0m
+[0m[[0m[31merror[0m] [0m[0m/media/sf_student/Test/app/controllers/ShoppingCtrl.java:9:1: package play.api does not exist[0m
+[0m[[0m[31merror[0m] [0m[0mimport play.api.Environment;[0m
+[0m[[0m[31merror[0m] [0m[0m/media/sf_student/Test/app/controllers/ShoppingCtrl.java:12:1: package models.users does not exist[0m
+[0m[[0m[31merror[0m] [0m[0mimport models.users.*;[0m
+[0m[[0m[31merror[0m] [0m[0m/media/sf_student/Test/app/controllers/ShoppingCtrl.java:13:1: package models does not exist[0m
+[0m[[0m[31merror[0m] [0m[0mimport models.*;[0m
+[0m[[0m[31merror[0m] [0m[0m/media/sf_student/Test/app/controllers/ShoppingCtrl.java:16:1: package controllers.security does not exist[0m
+[0m[[0m[31merror[0m] [0m[0mimport controllers.security.*;[0m
+[0m[[0m[31merror[0m] [0m[0m/media/sf_student/Test/app/controllers/ShoppingCtrl.java:21:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol: class Controller[0m
+[0m[[0m[31merror[0m] [0m[0mpublic class ShoppingCtrl extends Controller {[0m
+[0m[[0m[31merror[0m] [0m[0m/media/sf_student/Test/app/controllers/ShoppingCtrl.java:18:1: package Security does not exist[0m
+[0m[[0m[31merror[0m] [0m[0m@Security.Authenticated(Secured.class)[0m
+[0m[[0m[31merror[0m] [0m[0m/media/sf_student/Test/app/controllers/ShoppingCtrl.java:19:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol: class With[0m
+[0m[[0m[31merror[0m] [0m[0m@With(AuthCustomer.class)[0m
+[0m[[0m[31merror[0m] [0m[0m/media/sf_student/Test/app/controllers/ShoppingCtrl.java:26:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   class FormFactory[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class controllers.ShoppingCtrl[0m
+[0m[[0m[31merror[0m] [0m[0m    private FormFactory formFactory;[0m
+[0m[[0m[31merror[0m] [0m[0m/media/sf_student/Test/app/controllers/ShoppingCtrl.java:29:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   class Environment[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class controllers.ShoppingCtrl[0m
+[0m[[0m[31merror[0m] [0m[0m    private Environment env;[0m
+[0m[[0m[31merror[0m] [0m[0m/media/sf_student/Test/app/controllers/ShoppingCtrl.java:33:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   class Environment[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class controllers.ShoppingCtrl[0m
+[0m[[0m[31merror[0m] [0m[0m    public ShoppingCtrl(Environment e, FormFactory f) {[0m
+[0m[[0m[31merror[0m] [0m[0m/media/sf_student/Test/app/controllers/ShoppingCtrl.java:33:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   class FormFactory[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class controllers.ShoppingCtrl[0m
+[0m[[0m[31merror[0m] [0m[0m    public ShoppingCtrl(Environment e, FormFactory f) {[0m
+[0m[[0m[31merror[0m] [0m[0m/media/sf_student/Test/app/controllers/ShoppingCtrl.java:41:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   class Customer[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class controllers.ShoppingCtrl[0m
+[0m[[0m[31merror[0m] [0m[0m	private Customer getCurrentUser() {[0m
+[0m[[0m[31merror[0m] [0m[0m/media/sf_student/Test/app/controllers/ShoppingCtrl.java:46:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   class Result[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class controllers.ShoppingCtrl[0m
+[0m[[0m[31merror[0m] [0m[0m    public Result showBasket(String filter) {[0m
+[0m[[0m[31merror[0m] [0m[0m/media/sf_student/Test/app/controllers/ShoppingCtrl.java:52:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   class Result[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class controllers.ShoppingCtrl[0m
+[0m[[0m[31merror[0m] [0m[0m    public Result addToBasket(Long id,String filter) {[0m
+[0m[[0m[31merror[0m] [0m[0m/media/sf_student/Test/app/controllers/ShoppingCtrl.java:78:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   class Result[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class controllers.ShoppingCtrl[0m
+[0m[[0m[31merror[0m] [0m[0m    public Result addOne(Long itemId, Long pid, String filter) {[0m
+[0m[[0m[31merror[0m] [0m[0m/media/sf_student/Test/app/controllers/ShoppingCtrl.java:101:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   class Result[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class controllers.ShoppingCtrl[0m
+[0m[[0m[31merror[0m] [0m[0m    public Result removeOne(Long itemId, String filter) {[0m
+[0m[[0m[31merror[0m] [0m[0m/media/sf_student/Test/app/controllers/ShoppingCtrl.java:116:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   class Result[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class controllers.ShoppingCtrl[0m
+[0m[[0m[31merror[0m] [0m[0m    public Result emptyBasket(String filter) {[0m
+[0m[[0m[31merror[0m] [0m[0m/media/sf_student/Test/app/controllers/ShoppingCtrl.java:126:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   class Result[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class controllers.ShoppingCtrl[0m
+[0m[[0m[31merror[0m] [0m[0m    public Result placeOrder(String filter) {[0m
+[0m[[0m[31merror[0m] [0m[0m/media/sf_student/Test/app/controllers/ShoppingCtrl.java:164:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   class Result[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class controllers.ShoppingCtrl[0m
+[0m[[0m[31merror[0m] [0m[0m    public Result viewOrder(long id, String filter) {[0m
+[0m[[0m[31merror[0m] [0m[0m/media/sf_student/Test/app/controllers/ShoppingCtrl.java:169:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   class Result[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class controllers.ShoppingCtrl[0m
+[0m[[0m[31merror[0m] [0m[0m    public Result checkOut(long id, String filter) {[0m
+[0m[[0m[31merror[0m] [0m[0m/media/sf_student/Test/app/controllers/AdminController.java:29:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   class Inject[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class controllers.AdminController[0m
+[0m[[0m[31merror[0m] [0m[0m    @Inject[0m
+[0m[[0m[31merror[0m] [0m[0m/media/sf_student/Test/app/controllers/HomeController.java:38:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   class Inject[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class controllers.HomeController[0m
+[0m[[0m[31merror[0m] [0m[0m    @Inject[0m

@@ -1,0 +1,49 @@
+@(products: List[models.Product],categories: List[models.Category],user : models.users.User, filter: String)
+
+@main("Kitchen Appliances",user, filter){
+  
+
+
+
+    @for(p<- products){
+        
+        
+                <div class="col-md-3">
+                  <div class="thumbnail">
+                    
+                      <img src="http://urbanliferealty.com/wp-content/uploads/2017/06/53-Dutch-Settlers-Crt-East-MLS_Size-005-7-Bathroom-640x480-72dpi.jpg" alt="Lights" style="width:100%">
+                      <div class="caption">
+        
+                  <p>Product:@p.getDescription
+                  </br>
+                    Price: @p.getPrice</p>
+                        
+                      
+                      </div>
+                    </a>
+                  </div>
+                </div>
+          }
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}

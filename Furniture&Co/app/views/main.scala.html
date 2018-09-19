@@ -1,0 +1,148 @@
+
+
+
+
+@import helper._
+@(title: String,user : models.users.User, filter: String)(content: Html)
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+   <head>
+           <link rel="stylesheet" href="@routes.Assets.versioned("bootsrap/css/bootstrap.min.css")" >
+       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+       <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+       <title>@title</title>
+       <link rel="stylesheet" media="screen" href="@routes.Assets.versioned("stylesheets/main.css")">
+       <link rel="shortcut icon" type="image/png" href="@routes.Assets.versioned("images/favicon.png")">
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+       
+   </head>
+   <div class="container">
+           <nav class="navbar navbar-icon-top navbar-default navbar-fixed-top">
+               <div class="container-fluid">
+                   <!-- Brand and toggle get grouped for better mobile display -->
+                   <div class="navbar-header">
+                       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                           <span class="sr-only">Toggle navigation</span>
+                           <span class="icon-bar"></span>
+                           <span class="icon-bar"></span>
+                           <span class="icon-bar"></span>
+                       </button>
+                       <a class="navbar-brand" href="@routes.HomeController.Home("")">Furniture Co</a>
+                   </div>
+                   <!-- Collect the nav links, forms, and other content for toggling -->
+                   <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                       <ul class="nav navbar-nav">
+                           <li><a href="@routes.HomeController.Home("")">Home <span class="sr-only">(current)</span></a></li>
+             
+
+                           <li class="dropdown">
+                               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Products<span class="caret"></span></a>
+                               <ul class="dropdown-menu">
+                                   <li><a href="@routes.HomeController.Bathroom()">Bathroom</a></li>
+                                   <li><a href="@routes.HomeController.Kitchen()">Kitchen</a></li>
+                                   <li><a href="@routes.HomeController.Bedroom()">Bedroom</a></li>
+                                   <li><a href="@routes.HomeController.LivingRoom()">Living room</a></li>
+                               </ul>
+                           </li>
+                       </ul>
+                       
+                       <ul class="nav navbar-nav navbar-right">
+                          
+                        <ul class="nav navbar-nav navbar-right">
+                                <li><a href="@routes.HomeController.search(0,filter)"> 
+                                        <span class="glyphicon glyphicon-search"></span>                           </a></li>
+                              <li>
+                                    @if(user!=null){
+                                        <a href="@routes.ShoppingCtrl.showBasket()">
+                                                <span class="glyphicon glyphicon-shopping-cart"></span>
+                                              </a>
+                                       }else{
+            
+                                       }
+
+                              </li>
+
+                           <li class="dropdown">
+                               
+                               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                   <i class="fa fa-user-circle-o"></i>
+                                   @if(user!=null){
+                                   
+                                   @user.getEmail <span class="caret"></span>
+                                   }else{
+                                       Account
+                                   }
+
+
+                               </a>
+
+
+                               <ul class="dropdown-menu">
+                                    <li><a href="@routes.HomeController.accountDetails()">Account</a></li>
+                                    
+                                   
+                                    
+                                   <li  @if(title=="Login"){class="active"}>
+                                        
+                                       @if(user!=null){
+                                   <a href="@routes.LoginController.logout()">Logout </a>
+                                   <a href="@routes.AdminController.adminControl()">Administrator Settings</a>
+                                   }else{
+                                       <a href="@routes.LoginController.login()">Login</a>
+                                   }                           
+                               
+
+                                   @if(user != null){
+                                  
+                                   
+                                   }else{
+                                    <li role="separator" class="divider"></li>
+                                    <li><a href="@routes.HomeController.addCustomer()">Register </a></li>
+                                   }
+
+                                   
+                                 
+
+                               </ul>
+                           </li>
+                       </ul>
+                   </div><!-- /.navbar-collapse -->
+               </div><!-- /.container-fluid -->
+           </nav>
+       </div>
+   <body>
+@content
+
+
+
+         
+
+       <script src="@routes.Assets.versioned("javascripts/main.js")" type="text/javascript"></script>
+   </body>
+   <div class="push"></div>
+</div>
+
+<div class="footer" id="footer">
+    <div class="container">
+    
+            <hr/>        
+            <div class="row">
+                <div class="col-sm-6">Furniture Co Footer</div>
+                <div class="col-sm-6 ">
+                        <a href="@routes.HomeController.Home()" class="fa fa-facebook"></a>
+                        <a src="www.twitter.com" class="fa fa-twitter"></a>
+                    </div>
+            </div> 
+        </div>
+    </div> 
+    
+
+</footer>
+
+
+</html>

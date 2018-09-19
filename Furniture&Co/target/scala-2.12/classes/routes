@@ -1,0 +1,50 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
+
+# An example controller showing a sample home page
+GET     /                           controllers.HomeController.Home(filter?="")
+GET     /about                          controllers.HomeController.AboutUs
+GET    /bathroom                        controllers.HomeController.Bathroom(cat:Long?=3L, filter?="")
+GET   /kitchen                          controllers.HomeController.Kitchen(cat:Long?=2L, filter?="")
+GET   /bedroom                          controllers.HomeController.Bedroom(cat:Long?=1L, filter?="")
+GET   /livingroom                     controllers.HomeController.LivingRoom(cat:Long?=4L, filter?="")
+GET  /adminControl                     controllers.AdminController.adminControl(filter?="")
+POST    /updateProductSubmit/:id    controllers.HomeController.updateProductSubmit(id: Long)
+GET   /viewOrder/:id                controllers.ShoppingCtrl.viewOrder(id: String,filter?="")
+GET  /addComment/:id                     controllers.ShoppingCtrl.addComment(id: Long,filter?="")
+POST /addCommentSubmit/:id              controllers.ShoppingCtrl.addCommentSubmit(id:Long,filter?="")
+GET    /addProduct                      controllers.HomeController.addProduct
+GET   /delProduct/:id                   controllers.AdminController.deleteProduct(id: Long, filter?="")
+# Map static resources from the /public folder to the /assets URL path
+GET     /assets/*file               controllers.Assets.versioned(path="/public", file: Asset)
+GET    /addUser                      controllers.HomeController.addUser
+GET   /addCustomer                  controllers.HomeController.addCustomer
+POST /addCustomerSubmit              controllers.HomeController.addCustomerSubmit
+GET   /delCustomer/:email                  controllers.AdminController.deleteCustomer(email: String, filter: String)
+GET  /updateProduct/:id                    controllers.HomeController.updateProduct(id:Long)
+GET  /updateCustomer/:email                 controllers.HomeController.updateCustomer(email: String)
+GET     /accountDetails                          controllers.HomeController.accountDetails
+
+POST    /updateCustomerSubmit/:email   controllers.HomeController.updateCustomerSubmit(email: String)
+
+GET     /cancelOrder                         controllers.ShoppingCtrl.cancelOrder(id: Long)
+
+GET     /productListing/:id                 controllers.HomeController.productListing(id: Long, filter?="")
+GET     /showBasket                         controllers.ShoppingCtrl.showBasket(filter?="")
+GET     /addToBasket/:id                    controllers.ShoppingCtrl.addToBasket(id: Long, filter?="")
+GET     /addOne/:itemId                     controllers.ShoppingCtrl.addOne(itemId: Long, pid: Long, filter?="")
+GET     /removeOne/:itemId                  controllers.ShoppingCtrl.removeOne(itemId: Long, filter?="")
+GET     /emptyBasket                        controllers.ShoppingCtrl.emptyBasket(filter?="")
+GET     /placeOrder                         controllers.ShoppingCtrl.placeOrder(filter?="")
+
+GET     /checkOut                            controllers.ShoppingCtrl.checkOut(filter?="")
+GET     /search                       controllers.HomeController.search(cat:Long?=0,filter?="")
+POST   /checkOutSubmit                     controllers.ShoppingCtrl.checkOutSubmit(filter?="")
+
+GET  /login                          controllers.LoginController.login(filter?="")
+POST /loginSubmit                   controllers.LoginController.loginSubmit
+GET /logout                         controllers.LoginController.logout
+POST /addProductSubmit        controllers.HomeController.addProductSubmit
+
+POST /addUserSubmit        controllers.HomeController.addUserSubmit

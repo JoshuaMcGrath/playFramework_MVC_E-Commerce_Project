@@ -1,0 +1,255 @@
+@(loginForm: Form[models.users.Login],products: List[models.Product],user : models.users.User, filter: String) @main("Home",user,
+filter) {
+
+<div id="myCarousel" class="carousel slide" data-interval="false">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+    <li data-target="#myCarousel" data-slide-to="3"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="item active">
+      <img src="http://www.gsfdcy.com/data/img/34/1510311-furniture-wallpaper.jpg" style="width:100%" class="img-responsive">
+      <div class="container">
+        <div class="caraous-title">
+          <div class="col-md-12">
+            <div class="col-md-6">
+              <br> </br>
+              <br> </br>
+              <br> </br>
+              <br> </br>
+              <br> </br>
+              <br> </br>
+              <br> </br>
+              <br> </br>
+              <br> </br>
+              <br> </br>
+              <a class="btn btn-lg btn-primary site-btn  style=" background-color:transparent " " href="@routes.HomeController.LivingRoom()">View Living Room</a>
+            </div>
+            </a>
+          </div>
+          </a>
+
+        </div>
+      </div>
+    </div>
+    <div class="item">
+      <img src="http://wallpaperstock.net/kitchen-in-red_wallpapers_17619_2560x1440.jpg" style="width:100%" class="img-responsive">
+      <div class="container">
+        <div class="caraous-title">
+          <div class="col-md-12">
+            <div class="col-md-6">
+              <br> </br>
+              <br> </br>
+              <br> </br>
+              <br> </br>
+              <br> </br>
+              <br> </br>
+              <br> </br>
+              <br> </br>
+              <br> </br>
+              <br> </br>
+              <a class="btn btn-lg btn-primary site-btn  style=" background-color:transparent " " href="@routes.HomeController.Kitchen()">View Kitchen </a>
+
+              <h1> </h1>
+              </a>
+              <h3></h3>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <div class="item">
+      <img src="https://wallpaperstock.net/bedroom-design-wallpapers_25540_1920x1080.jpg" style="width:100%" class="img-responsive">
+      <div class="container">
+        <div class="caraous-title">
+          <div class="col-md-12">
+            <div class="col-md-6">
+              <br> </br>
+              <br> </br>
+              <br> </br>
+              <br> </br>
+              <br> </br>
+              <br> </br>
+              <br> </br>
+              <br> </br>
+              <br> </br>
+              <br> </br>
+              <a class="btn btn-lg btn-primary site-btn  style=" background-color:transparent " " href="@routes.HomeController.Bedroom()">View BedRoom</a>
+
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="item">
+      <img src="http://vivianliving.com/wp-content/uploads/2016/09/bath.jpg" style="width:100%" class="img-responsive">
+      <div class="container">
+        <div class="caraous-title">
+          <div class="col-md-12">
+            <div class="col-md-6">
+              <br> </br>
+              <br> </br>
+              <br> </br>
+              <br> </br>
+              <br> </br>
+              <br> </br>
+              <br> </br>
+              <br> </br>
+              <br> </br>
+              <br> </br>
+              <a class="btn btn-lg btn-primary site-btn  style=" background-color:transparent " " href="@routes.HomeController.Bathroom()">View Bathroom </a>
+
+              </a>
+              </a>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+  </div>
+
+
+  <!-- Controls -->
+  <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+    <span class="icon-prev"></span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel" data-slide="next">
+    <span class="icon-next"></span>
+  </a>
+</div>
+<br></br>
+<br></br>
+
+
+
+
+
+
+
+<div class="container">
+
+
+
+
+
+
+
+
+
+  <div class="col-md-3">
+
+
+    <a href="@routes.HomeController.LivingRoom()">
+      <img src="https://wallpaperstock.net/clean-and-modern-living-room-wallpapers_42470_1920x1080.jpg" alt="Lights" style="width:100%">
+    </a>
+    <div class="caption">
+      <p>Our living room furtnite is made with the upmost care and best materials you will find at a great price.</p>
+    </div>
+
+
+
+  </div>
+
+  <div class="col-md-3">
+    <a href="@routes.HomeController.Kitchen()">
+
+      <img src="https://wallpaperstock.net/apartment-1-wallpapers_12687_1920x1080.jpg" alt="Lights" style="width:100%">
+    </a>
+
+
+
+    <p>Our kitchens are made in the highest quality marble and wood.</p>
+
+
+  </div>
+
+
+  <div class="col-md-3">
+    <a href="@routes.HomeController.Bedroom()">
+
+      <img src="https://wallpaperstock.net/wallpapers/thumbs1/28908hd.jpg" alt="Lights" style="width:100%">
+    </a>
+
+    <div class="caption">
+
+      <p>Our beds and furtniture are made from the highest quality wood and the most comfortable jersey.</p>
+
+    </div>
+
+  </div>
+
+  <div class="col-md-3">
+
+
+    <a href="@routes.HomeController.Bathroom()">
+      <img src="http://drabtofabdesign.com/wp-content/uploads/2018/02/Modern-bathroom-designs-and-ideas-Setup-Modern-bathroom-in-budget.jpg"
+        alt="Lights" style="width:100%">
+    </a>
+    <div class="caption">
+
+      <p>Our bathrooms will give a sheen to any new or existing home at a quality price.</p>
+
+
+    </div>
+
+  </div>
+
+
+
+
+  <br></br>
+  <br></br>
+  <br></br>
+  <br></br>
+
+
+
+
+
+
+  <br></br>
+  <br></br>
+  <br></br>
+  <br></br>
+
+
+
+  <div id="googleMap" style="width:100%;height:400px;"></div>
+  
+    <script>
+      function myMap() {
+        var myCenter = new google.maps.LatLng(53.291058, -6.362994);
+        var mapProp = {
+          center: myCenter,
+          zoom: 15,
+          scrollwheel: false,
+          draggable: false,
+          mapTypeId: google.maps.MapTypeId.ROADMAP
+        };
+        var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
+        var marker = new google.maps.Marker({
+          position: myCenter,
+          title: 'Our College'
+        });
+        marker.setMap(map);
+      }
+    </script>
+  
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAHiWCk_dEB_dtCyD8-YMXjGFJ_h2Y2WmM&callback=myMap"></script>
+  }

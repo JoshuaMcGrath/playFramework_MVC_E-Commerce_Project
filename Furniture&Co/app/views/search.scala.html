@@ -1,0 +1,133 @@
+@(categories: List[models.Category], products: List[models.Product], catId: Long, filter:String,user : models.users.User,e: play.api.Environment)
+
+@main("Search",user, filter){
+  
+<br>
+<br>
+<br>
+  <div class="container">
+      <div class="row">
+          <div class="col-sm-6 col-sm-offset-3">
+              <div id="imaginary_container"> 
+                  <div class="input-group stylish-input-group input-append">
+                      <form action="@routes.HomeController.search()" method"GET">
+                      <input type="text" class="form-control" name="filter" value="@filter" placeholder="Search">
+                        </form>
+                    
+                      <span class="input-group-addon">
+                          <button type="submit">
+                              <span class="glyphicon glyphicon-search"></span>
+                          </button>  
+                      </span>
+                  </div>
+              </div>
+          </div>
+    </div>
+  </div>
+  
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+
+  <br>
+  <br>
+  <br>
+  <br>
+  
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  
+ 
+
+
+    @for(p<- products){
+        
+      </div>
+                <div class="col-sm-3">
+                    <a href="@routes.HomeController.productListing(p.getId)">
+                    <article class="col-item">
+                      <div class="photo">
+                      <div class="options-cart-round">
+                        
+                        </button>
+                      </div>
+                      
+                      @if(e.resource("public/images/productImages/" + p.getId + ".jpg").isDefined) {
+                        <td><img src="/assets/images/productImages/@(p.getId + ".jpg")"/></td>
+                    } else {
+                        <td><img src="/assets/images/productImages/noImage.jpg"/></td>
+                    }            
+                
+                    </div>
+                    <div class="info">
+                      <div class="row">
+                          <a href="@routes.HomeController.productListing(p.getId)">
+                        <div class="price-details col-md-6">
+                          
+                          
+                            @p.getName</h1>
+                          <span class="price-new">Price:  €@p.getPrice</span>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+
+                  
+                    
+                  </article>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+                
+            
+          }
+      
+      
+        </div>
+        
+
+<br>
+<br>
+<br>
+<br>
+<br>
+          
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+
+}

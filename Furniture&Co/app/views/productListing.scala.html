@@ -1,0 +1,102 @@
+@(p: models.Product,user: models.users.User,e: play.api.Environment, filter:String)
+
+@main("Product Listing",user, filter){
+    <br>
+    <br>
+   
+    
+    <div class="container-fluid">
+        <div class="content-wrapper">	
+            <div class="item-container">	
+                <div class="container">	
+                    <div class="col-md-12">
+                            <div class="autoFit">
+                        <div class="product col-md-3 service-image-left">
+                        
+                            <center>
+                        
+                                          
+                      @if(e.resource("public/images/productImages/" + p.getId + ".jpg").isDefined) {
+                        <td><img src="/assets/images/productImages/@(p.getId + ".jpg")"/></td>
+                    } else {
+                        <td><img src="/assets/images/productImages/noImage.jpg"/></td>
+                    }            
+                
+                            </center>
+                        </div>
+                        
+                    </div>
+                   
+                        
+                    <div class="col-md-7">
+                        <div class="product-title"><p>Name: @p.getName </p></div>
+                        <div class="product-desc"><p>Description: @p.getDescription</p></div>
+                        <div class="product-rating"><i class="fa fa-star gold"></i> <i class="fa fa-star gold"></i> <i class="fa fa-star gold"></i> <i class="fa fa-star gold"></i> <i class="fa fa-star-o"></i> </div>
+                        <hr>
+                        <div class="product-price"><p>Price:  €@("%.2f".format(p.getPrice))</p></div>
+                        <div class="product-stock"><p>Stock: @p.getStock </p></div>
+                        <div class="Add Comment">
+                                <a href="@routes.ShoppingCtrl.addComment(p.getId,"")">
+                                        <button class="btn btn-primary">Submit a review.</button>
+                                </a></div>
+                        
+                        
+                        <hr>
+                        <div class="btn-group cart">
+                            <a href="@routes.ShoppingCtrl.addToBasket(p.getId)"button type="button" class="btn btn-success">
+                                Add to cart 
+                            </button></a>
+                        </div>
+                       
+                    </div>
+                </div> 
+            </div>
+
+
+
+
+
+
+
+        
+            <div class="container-fluid">		
+                <div class="col-md-12 product-info">
+                        <ul id="myTab" class="nav nav-tabs nav_tabs">
+                             <li><a href="#service-three" data-toggle="tab">Comments</a>
+                            @for(g<-p.getComments()){
+                                <p>Review:  @g.getCommenting             </p>
+
+
+
+
+
+                            }
+                            
+                         
+                            
+                            
+
+
+
+
+
+
+
+                            </li>
+                            
+
+                        </ul>
+                    
+                           
+
+                        </div>
+                        <div class="tab-pane fade" id="service-three">
+                                                    
+                        </div>
+                    </div>
+                    <hr>
+                </div>
+            </div>
+        </div>
+    </div>
+}

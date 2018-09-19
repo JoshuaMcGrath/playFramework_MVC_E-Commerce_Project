@@ -1,0 +1,63 @@
+@(customerForm : Form[models.users.Customer],user : models.users.User, filter: String)
+@import helper._
+@import play.api.data.validation.Constraints._
+
+@main("New Customer",user, filter){
+
+
+    @form(routes.HomeController.addCustomerSubmit(), 'class -> "form-horizontal", 'role -> "form"){
+        @CSRF.formField
+    <div class="container">
+    <div class="row centered-form">
+    <div class="col-xs-12 col-sm-8 col-md-4 col-sm-offset-2 col-md-offset-4">
+    <div class="panel panel-default">
+                    <div class="panel-heading">
+                            <h3 class="panel-title">Please Register<small>It's free!</small></h3>
+                             </div>
+                             <div class="panel-body">
+                           
+                                <div class="row">
+                                    <div class="col-xs-6 col-sm-6 col-md-6">
+                                        <div class="form-group">
+                                                @inputText(customerForm("firstName"), '_label -> "First Name", 'class -> "form-control input-sm")  
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-6 col-sm-6 col-md-6">
+                                        <div class="form-group">
+                                                @inputText(customerForm("lastName"), '_label -> "Last Name", 'class -> "form-control input-sm")  
+                                            </div>
+                                    </div>
+                                </div>
+    
+                                <div class="form-group">
+                                        @inputText(customerForm("email"), '_label -> "Email Address", 'class -> "form-control input-sm")
+                                </div>
+    
+                                <div class="row">
+                                    <div class="col-xs-6 col-sm-6 col-md-6">
+                                        <div class="form-group">
+                                                @inputText(customerForm("password"), '_label -> "Password", 'class -> "form-control input-sm")                                                
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                                
+                           
+                              
+        <div class="actions">
+                <input type="submit" value = "Register" class="btn btn-info btn-block">
+                <a href ="@routes.HomeController.Home()">
+                    <button type="button" class="btn btn-warning btn-block">Cancel</button>
+                </a>
+            </div>
+            }           
+                           
+                        
+                    </div>
+                </div>
+            </div>
+            </div>
+            </div>
+       
+
+    }

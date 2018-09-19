@@ -1,0 +1,37 @@
+@(id: Long,p: models.Product,commentForm: Form[models.Comment],user : models.users.User,filter: String)
+@import helper._
+
+
+
+
+@main("Submitting a review",user, filter){
+
+@form(routes.ShoppingCtrl.addCommentSubmit(p.getId),     'class -> "form-horizontal", 
+    'role -> "form") {
+        @CSRF.formField
+        @inputText(commentForm ("commentId"), '_label -> "", 'hidden -> "hidden")
+        
+        @inputText(commentForm ("commenting"), '_label -> "Write your comment down below", 'class -> "form-control")
+        @inputText(commentForm ("rating"), '_label -> "Rating (1 -> 5)", 'class -> "form-control")
+        
+        @inputText(commentForm ("commentId"), '_label -> "", 'hidden -> "hidden")
+
+ 
+        
+        <div class="actions">
+            <input type="submit" value = "Comment" class="btn btn-primary">
+            <a href ="@routes.HomeController.productListing(p.getId,"")">
+                <button type="button" class="btn btn-warning">Cancel</button>
+            </a>
+            </div>
+
+        }
+    }
+
+
+
+
+
+
+
+

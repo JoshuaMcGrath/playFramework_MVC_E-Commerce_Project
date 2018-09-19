@@ -1,0 +1,40 @@
+@(email: String, updateCustomerForm: Form[models.users.Customer], user: models.users.User,filter: String)
+@import helper._
+
+@main("Update Customer", user,filter){
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    @form(action=routes.HomeController.updateCustomerSubmit(email), 'class -> "form-horizontal", 
+    'role -> "form",'enctype -> "multipart/form-data") {
+        @CSRF.formField
+        @inputText(updateCustomerForm("email"), '_label -> "", 'hidden -> "hidden")
+        @inputText(updateCustomerForm("email"), '_label -> "", 'hidden -> "hidden")
+        @inputText(updateCustomerForm("password"), '_label -> "New Password", 'class -> "form-control")
+        @inputText(updateCustomerForm("firstname"), '_label -> "", 'hidden -> "hidden")
+        @inputText(updateCustomerForm("lastname"), '_label -> "", 'hidden -> "hidden")
+        
+        
+        <div class="actions">
+            <input type="submit" value="Update User" class="btn btn-primary">
+            <a href="@routes.HomeController.Home()">
+                <button type="button" class="btn btn-warning">Cancel</button>
+            </a>
+        </div>
+     }
+    
+
+
+
+
+    }

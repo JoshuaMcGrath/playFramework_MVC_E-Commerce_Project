@@ -1,0 +1,74 @@
+@(products: List[models.Product],categories: List[models.Category], catId: Long, user : models.users.User, filter: String,e: play.api.Environment)
+@main("Bedroom",user, filter){
+    
+  <div class="row"></div>
+  
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+  
+    
+   
+      <div class="container">
+          <div class="row">
+                <h1>Bedroom Appliances</h1>
+                
+        
+              </div>
+            </div>
+                    
+  
+      @for(g<- products){
+          
+        
+  
+                  <div class="col-sm-3">
+                      <article class="col-item">
+                        <div class="photo">
+                        <div class="options-cart-round">
+                          <button class="btn btn-default" title="Add to cart">
+                            <span class="fa fa-shopping-cart"></span>
+                          </button>
+                        </div>>c
+                        @if(e.resource("public/images/productImages/" + g.getId + ".jpg").isDefined) {
+                          <td><img src="/assets/images/productImages/@(g.getId + ".jpg")"/></td>
+                      } else {
+                          <td><img src="/assets/images/productImages/noImage.jpg"/></td>
+                      }                  
+                      </div>
+                      <div class="info">
+                        <div class="row">
+                          <div class="price-details col-md-6">
+                            
+                            <h1><a href="@routes.HomeController.productListing(g.getId)">
+                              @g.getName</h1>
+                            <span class="price-new">@g.getPrice</span>
+                          </div>
+                        </div>
+                      </div>
+  
+                    <a href="@routes.ShoppingCtrl.addToBasket(g.getId)"  class="btn btn-default btn-xs"><span class="glyphicon glyphicon-shopping-cart"></span></a>
+                      
+                    </article>
+                    
+                  </div>
+  
+                  
+              
+            }
+        
+        
+  
+            
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  }
